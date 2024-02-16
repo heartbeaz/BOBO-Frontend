@@ -4,6 +4,8 @@ import {NavigationContainer} from '@react-navigation/native'
 // screens
 import Login from './screens/login';
 import Welcome from './screens/welcom';
+import Register from './screens/register';
+import Setting from './screens/usersetting';
 import { InitialStack } from './navigation/stack';
 
 

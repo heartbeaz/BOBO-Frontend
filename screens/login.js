@@ -23,6 +23,7 @@ import {
     StyledTextInput,
     RightIcon,
     Colors,
+    UserTextInput,
 } from './../components/styles'
 
 //Buttons
@@ -81,16 +82,16 @@ const Login = ()=>{
                   </StyledFormArea>)}
                 </Formik>
                 <View style = {{width:"80%",alignItems : 'flex-end'}}>
-                    <Button onPress = {()=>{}} title = "忘記密碼?"  color = {orange} />
+                    <Button onPress = {()=>{}} title = "忘記密碼?"  color = 'orange' />
                 </View>
                 <LoginButtonContainer>
                     <LongThinButton onPress = {()=>{}} title = "登入" backgroundColor = {orange}/>
                     <View style={{flexDirection: 'row', alignItems: 'center', marginTop:20}}>
-                        <View style={{flex: 1, height: 2, backgroundColor:'black'}} />
+                        <View style={{flex: 1, height: 2, backgroundColor:'orange'}} />
                         <View>
-                            <Text style={{textAlign: 'center', paddingHorizontal:8}}>或使用其他方式登入</Text>
+                            <Text style={{textAlign: 'center', paddingHorizontal:8,color:'orange'}}>或使用其他方式登入</Text>
                         </View>
-                        <View style={{flex: 1, height: 2, backgroundColor: 'black'}} />
+                        <View style={{flex: 1, height: 2, backgroundColor: 'orange'}} />
                     </View>
                     <View style={styles.rowContainer}>
                         <CircleButton onPress={()=>{}} logoName = "logo-google" color = "orange"/>
@@ -109,7 +110,7 @@ const MyTextInput = ({label, icon, ...props})=>{
         <LeftIcon>
             <Octicons name = {icon} size = {30} color = {brand}/>
         </LeftIcon>
-        <StyledTextInput {...props}/>
+        <UserTextInput {...props}/>
     </View>
     )
 }
